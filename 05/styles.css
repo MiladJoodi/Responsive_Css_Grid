@@ -287,8 +287,29 @@ nav {
 /* Recent */
 .recent{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
+}
+.recent-item{
+    max-width: 300px;
+    background-color: red;
+    display: grid;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .overlay-item{
+            grid-column: 1;
+            grid-row: 1;
+        p{
+            background-color: #777;
+        }
+        
+    }
 }
 
 
