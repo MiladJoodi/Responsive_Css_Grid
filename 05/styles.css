@@ -156,7 +156,7 @@ nav {
 }
 
 
-.desc{
+.desc {
     font-size: 1.3125rem;
     font-weight: 300;
     max-width: 1200px;
@@ -165,9 +165,43 @@ nav {
     margin: 50px auto;
 }
 
-@media screen and (max-width: 960px){
+.skills{
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 200;
+}
+
+.skill-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    max-width: 500px;
+    padding: 20px 0;
+    margin: 0 auto;
+    img{
+       &:nth-child(4){
+        width: 50%;
+    } 
+    }
+    
+
+    img {
+        max-width: 20%;
+        margin: 0 10px;
+        filter: grayscale();
+        opacity: 0.5;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
     nav {
-        ul{
+        ul {
             gap: 10px;
         }
     }
