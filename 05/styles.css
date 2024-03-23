@@ -10,7 +10,8 @@ body {
 a {
     text-decoration: none;
 }
-button{
+
+button {
     font-family: "Poppins";
 }
 
@@ -25,9 +26,7 @@ ul {
 }
 
 /* Header */
-header {
-    
-}
+header {}
 
 .head {
     background: #f4f4f4 url(./img/bg_head.jpg) top center;
@@ -140,14 +139,15 @@ nav {
         display: inline-block;
 
         &:hover {
-                span{
-                    transform: rotate(0);
-        
-                    }
+            span {
+                transform: rotate(0);
+
+            }
+
             .dropdown {
                 visibility: visible;
                 left: 100px;
-                
+
 
             }
         }
@@ -172,33 +172,33 @@ nav {
     margin: 50px auto;
 }
 
-.section-title{
+.section-title {
     text-align: center;
 
-    span{
+    span {
         display: inline-block;
     }
 
-    &::before{
-    display: inline-block;
-    content: "";
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    width: 25rem;
-    height: 2px;
-    margin: 0 1rem;
-    transform: translateY(-0.7rem);
+    &::before {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 25rem;
+        height: 2px;
+        margin: 0 1rem;
+        transform: translateY(-0.7rem);
     }
 
-    &::after{
-    display: inline-block;
-    content: "";
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    width: 25rem;
-    height: 2px;
-    margin: 0 1rem;
-    transform: translateY(-0.7rem);
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        width: 25rem;
+        height: 2px;
+        margin: 0 1rem;
+        transform: translateY(-0.7rem);
     }
 }
 
@@ -209,7 +209,7 @@ nav {
 }
 
 /* Skills */
-.skills{
+.skills {
     padding: 40px 0;
 }
 
@@ -221,12 +221,13 @@ nav {
     max-width: 500px;
     padding: 20px 0;
     margin: 0 auto;
-    img{
-       &:nth-child(4){
-        width: 50%;
-    } 
+
+    img {
+        &:nth-child(4) {
+            width: 50%;
+        }
     }
-    
+
 
     img {
         max-width: 20%;
@@ -238,15 +239,17 @@ nav {
 
 
 /* Services */
-.services{
+.services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
 }
-.section-title{
+
+.section-title {
     grid-column: span 3;
 }
-.services-item{
+
+.services-item {
     max-height: 400px;
     padding: 15px 25px;
     border-radius: 10px;
@@ -256,11 +259,11 @@ nav {
     flex-direction: column;
     justify-content: space-between;
 
-    p{
+    p {
         color: #3a3a3a;
     }
 
-    button{
+    button {
         padding: 10px 25px;
         width: 100%;
         outline: none;
@@ -272,43 +275,47 @@ nav {
         justify-content: center;
         transition: all 0.2s;
 
-        &:hover{
+        &:hover {
             background-color: #e4e4e4;
-            
+
         }
     }
 }
 
-.magnify{
+.magnify {
     width: 15px;
     height: 15px;
 }
 
 /* Recent */
-.recent{
+.recent {
     display: grid;
     gap: 0 30px;
 }
-.recent-item{
-    max-width: 300px;
+
+.recent-item {
     background-color: red;
     display: grid;
+    grid-template-rows: 80% 20%;
 
-    img{
+    .recent-img {
+        max-width: 300px;
+        height: 250px;
+
+    }
+
+    img {
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
         grid-column: 1;
         grid-row: 1;
 
     }
 
-    .overlay-item{
-            grid-column: 1;
-            grid-row: 1;
-        p{
-            background-color: #777;
-        }
-        
+    .overlay-item {
+        /* align-self: end; */
+        background-color: #777;
+
     }
 }
 
@@ -318,7 +325,7 @@ nav {
 
 
 
-.container{
+.container {
     max-width: 1080px;
     margin: 0 auto;
 }
