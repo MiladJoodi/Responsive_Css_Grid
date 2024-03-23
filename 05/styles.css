@@ -290,32 +290,37 @@ nav {
 /* Recent */
 .recent {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
 }
 
 .recent-item {
-    background-color: red;
-    display: grid;
-    grid-template-rows: 80% 20%;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
 
-    .recent-img {
-        max-width: 300px;
-        height: 250px;
+    p{
+        color: #3a3a3a;
+        padding: 10px 0;
+    }
+    
+    a{
+        border: none;
+        color: #5e5e5e;
+        padding: 5px 10px;
+        transition:  all 0.2s;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #e7e7e7;
 
+        &:hover{
+            background-color: #ddd;
+        }
     }
 
-    img {
+
+    img{
         width: 100%;
-        object-fit: fill;
-        grid-column: 1;
-        grid-row: 1;
-
-    }
-
-    .overlay-item {
-        /* align-self: end; */
-        background-color: #777;
-
     }
 }
 
