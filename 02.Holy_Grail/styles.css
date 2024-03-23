@@ -22,6 +22,7 @@ header {
   grid-column: span 3;
   text-align: center;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
 }
 
 nav {
@@ -44,6 +45,8 @@ article h2 {
 
 article img {
   width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
 }
 
 article p {
@@ -61,4 +64,33 @@ footer {
   grid-column: span 3;
   text-align: center;
   border-top: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1200px){
+  nav{
+    grid-column: span 3;
+    border-right: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  nav li{
+    display: inline-block;
+  }
+  article{
+    grid-column: span 2;
+  }
+  aside{
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 980px){
+nav, article, aside{
+  grid-column: span 3;
+}
+aside{
+  border-left: 0;
+  border-top: 1px solid #ddd;
+}
+article h2{
+  font-size: 2.5em;
+}
 }
