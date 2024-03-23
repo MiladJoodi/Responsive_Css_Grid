@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  margin: 20px;
+  font-family: "Poppins";
+  background: #d1dedd;
+}
+ul, li {
+  padding: 0;
+  list-style-type: none;
+}
+h1,h2,h3 {
+  color: #767f7e;
+}
+p {
+  color: #828b8a;
+}
+/* Start Grid */
+header{
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid #bbc7c7;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+article.featured{
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  border-bottom: 1px solid #bbc7c7;
+  padding-bottom: 40px;
+}
+article img, article.featured img{
+  width: 100%;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+article p, article h3{
+  margin: 20px 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+  article{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  article, article.featured{
+    display: block;
+    margin: 0 20px;
+  }
+}
